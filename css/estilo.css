@@ -103,7 +103,7 @@ main:after {
     height: 100vh;
     object-fit: cover;
     display: none;
-    animation: mudarImagem 0.7s;
+    animation: mudaImagem 0.7s;
 }
 
 .carrossel .imagem.ativa {
@@ -112,10 +112,12 @@ main:after {
 
 @keyframes mudaImagem {
     from {
+        transform: scale(1.1) translateX(20px);
         opacity: 0.85;
     }
-
+    
     to {
+        transform: scale(1) translateX(0);
         opacity: 1;
     }
 }
